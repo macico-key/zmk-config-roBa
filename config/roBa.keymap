@@ -32,14 +32,24 @@
     combos {
         compatible = "zmk,combos";
 
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <11 12>;
+        BrowserBack {
+            bindings = <&kp LA(LEFT_ARROW)>;
+            key-positions = <10 11>;
         };
 
-        shift_tab {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <20 19>;
+        BrowserForward {
+            bindings = <&kp LA(RIGHT_ARROW)>;
+            key-positions = <13 14>;
+        };
+
+        TabLeft {
+            bindings = <&kp LC(LS(TAB))>;
+            key-positions = <0 1>;
+        };
+
+        TabRight {
+            bindings = <&kp LC(TAB)>;
+            key-positions = <3 4>;
         };
     };
 
