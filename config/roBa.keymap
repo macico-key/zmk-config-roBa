@@ -12,8 +12,8 @@
 };
 
 &trackball {
-    automouse-layer = <4>;
-    scroll-layers = <5>;
+    //automouse-layer = <4>;
+    //scroll-layers = <5>;
 
     // arrows {
     //     layers = <3>;
@@ -136,4 +136,6 @@
     };
 };
 
-&mkp_input_listener { input-processors = <&zip_temp_layer 3 10000>; };
+&mkp_input_listener {
+    input-processors = <&zip_temp_layer 3 250>;
+};
