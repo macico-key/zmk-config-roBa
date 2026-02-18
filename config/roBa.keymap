@@ -14,7 +14,6 @@
 &trackball {
     //automouse-layer = <4>;
     //scroll-layers = <5>;
-
     // arrows {
     //     layers = <3>;
     //     bindings =
@@ -118,10 +117,10 @@
 
         MOUSE {
             bindings = <
-&trans          &trans  &trans  &trans  &trans                      &trans  &trans     &trans    &trans     &trans
-&trans          &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp LCLK  &mkp MB3  &mkp RCLK  &trans
-&kp LEFT_SHIFT  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans     &trans    &trans     &kp RIGHT_SHIFT
-&trans          &trans  &trans  &trans  &trans  &trans      &trans  &trans                                  &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans     &trans    &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp LCLK  &mkp MB3  &mkp RCLK  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans     &trans    &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                  &trans
             >;
         };
 
@@ -136,6 +135,4 @@
     };
 };
 
-&mkp_input_listener {
-    input-processors = <&zip_temp_layer 3 250>;
-};
+&mkp_input_listener { input-processors = <&zip_temp_layer 3 250>; };
