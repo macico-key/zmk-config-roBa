@@ -3,6 +3,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
+
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
 
 &mt {
@@ -31,23 +32,13 @@
         compatible = "zmk,combos";
 
         BrowserBack {
-            bindings = <&kp LA(LEFT_ARROW)>;
-            key-positions = <10 11>;
+            bindings = <&kp LS(TAB)>;
+            key-positions = <13 12>;
         };
 
         BrowserForward {
-            bindings = <&kp LA(RIGHT_ARROW)>;
-            key-positions = <13 14>;
-        };
-
-        TabLeft {
-            bindings = <&kp LC(LS(TAB))>;
-            key-positions = <0 1>;
-        };
-
-        TabRight {
-            bindings = <&kp LC(TAB)>;
-            key-positions = <3 4>;
+            bindings = <&kp TAB>;
+            key-positions = <18 19>;
         };
     };
 
@@ -74,6 +65,7 @@
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
             tap-ms = <20>;
         };
     };
@@ -83,10 +75,10 @@
 
         default_layer {
             bindings = <
-&mt ESCAPE Q      &kp W         &kp E         &kp R                       &kp T                                          &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F                       &kp G        &kp LS(LG(S))      &lt 4 SQT      &kp H        &kp J  &kp K      &kp L    &kp SEMICOLON
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                       &kp B        &kp MINUS          &kp GRAVE      &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 1 LC(SPACE)  &lt 2 SPACE  &kp TAB            &kp BACKSPACE  &lt 2 SPACE                             &kp ENTER
+&mt ESCAPE Q      &kp W         &kp E         &kp R                        &kp T                                             &kp Y        &kp U  &kp I      &kp O    &kp P
+&kp A             &kp S         &kp D         &kp F                        &kp G        &kp LS(LG(S))         &lt 4 SQT      &kp H        &kp J  &kp K      &kp L    &kp SEMICOLON
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp B        &kp MINUS             &kp GRAVE      &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 1 INT_HENKAN  &lt 2 SPACE  &kp INT_MUHENKAN      &kp BACKSPACE  &lt 2 SPACE                             &kp ENTER
             >;
 
             // sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
