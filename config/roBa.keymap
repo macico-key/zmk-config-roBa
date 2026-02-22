@@ -121,6 +121,15 @@
 &trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans                                            &bt BT_CLR_ALL
             >;
         };
+
+        SCROLL {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                             &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &kp LS(LG(S))      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans             &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans             &trans  &trans                          &trans
+            >;
+        };
     };
 };
 
