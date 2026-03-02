@@ -133,4 +133,4 @@
     };
 };
 
-&mkp_input_listener { input-processors = <&zip_temp_layer 3 500>; };
+&mkp_input_listener { input-processors = <&zip_temp_layer 3 200>; };
