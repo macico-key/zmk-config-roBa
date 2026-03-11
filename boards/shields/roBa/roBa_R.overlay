@@ -26,7 +26,7 @@
 };
 
 &zip_temp_layer {
-    require-prior-idle-ms = <1000>;
+    require-prior-idle-ms = <200>;
     excluded-positions = <
         18 // J
         19 // K
@@ -97,7 +97,7 @@
         layers = <5>;
         input-processors = <
             &zip_xy_to_scroll_mapper
-            &zip_scroll_x_scaler 0 1
+            &zip_scroll_x_scaler 1 16
             &zip_scroll_scaler 1 8
             &zip_scroll_transform INPUT_TRANSFORM_Y_INVERT
         >;
